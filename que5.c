@@ -54,7 +54,8 @@ int main(){
 					b[i]=0;
 				}
 				else if(sum>u-1){
-					b[i] = b[i] - (sum - u + 1);
+					int y = sum - b[i];
+					b[i] = b[i] - (u-y);
 				}
 				break;
 			}
